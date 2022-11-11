@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+    .hidden {
+        display: none;
+    }
+
+    </style>
+</head>
+<body>
+    
+<div class="signUp hidden">
+    <input placeholder="Enter Email" type="text" id="email">
+    <input placeholder="Enter Password" type="password" id="password">
+    <input placeholder="Enter Name" type="text" id="name">
+    <input type="file" accept="image/*" id="imageUpload">
+    <button id="submit" type="submit">Sign Up</button>
+</div>
+
+<hr>
+
+<div class="signIn">
+    <input placeholder="Enter Email" type="text" id="signInEmail">
+    <input placeholder="Enter Password" type="password" id="signInPassword">
+    <button onclick="signUp()" id="signInSubmit" type="submit">Sign In</button>
+</div>
+
+<button onclick="toggleInput()">create account</button>
+<button onclick="toggleInput2()">sign in instead</button>
+    <script type="module" src="app.js"></script>
+</body>
+</html>
